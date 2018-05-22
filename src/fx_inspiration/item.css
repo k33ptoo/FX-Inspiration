@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.mainFxmlClass:hover
+{
+    -fx-background-color: linear-gradient(to left, #6B519E, #fff);
+}

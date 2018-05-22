@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="64.0" prefWidth="292.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1">
+    <stylesheets>
+        <URL value="@item.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="27.0" layoutY="25.0" text="Amos Chepchieng" textFill="#9a9a9a">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="25.0" text="289" textFill="#9a9a9a">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="237.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8_Copy_48px.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="69.0" prefHeight="3.0" prefWidth="292.0" style="-fx-background-color: #fff;" />
+   </children>
+</AnchorPane>

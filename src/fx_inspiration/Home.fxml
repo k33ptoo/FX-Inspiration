@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="743.0" prefWidth="1294.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_inspiration.HomeController">
+   <children>
+      <VBox layoutX="-7.0" layoutY="132.0" prefHeight="653.0" prefWidth="92.0" AnchorPane.bottomAnchor="3.0" AnchorPane.topAnchor="132.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="76.0" prefWidth="91.0" stylesheets="@styling.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Settings_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="105.0" stylesheets="@styling.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Attach_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="104.0" stylesheets="@styling.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Sleep_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="75.0" layoutY="135.0" prefHeight="608.0" prefWidth="1219.0" style="-fx-background-color: #EDF2F6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="135.0">
+         <children>
+            <Pane layoutX="54.0" layoutY="54.0" prefHeight="152.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="56.0" layoutY="21.0" text="CONTRIBUTED TO THIS PROJECT" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="36.0" text="372" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI" size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="34.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="36.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Microphone_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="425.0" layoutY="54.0" prefHeight="152.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="79.0" layoutY="19.0" text="lINES OF CODE WRITTEN" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="36.0" text="8674" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI" size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="30.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_List_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="54.0" layoutY="296.0" prefHeight="263.0" prefWidth="298.0" style="-fx-background-color: #FFF;">
+               <content>
+                  <VBox fx:id="pnl_scroll" prefHeight="238.0" prefWidth="295.0" />
+               </content>
+            </ScrollPane>
+            <Pane layoutX="798.0" layoutY="54.0" prefHeight="152.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="79.0" layoutY="19.0" text="PROJECTS COMPLETED" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="36.0" text="157" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI" size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="42.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Copy_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="54.0" layoutY="242.0" prefHeight="48.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="70.0" layoutY="17.0" text="AGENTS STATS" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_List_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="424.0" layoutY="242.0" prefHeight="48.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="70.0" layoutY="17.0" text="PROJECT COMPLETED" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_List_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="798.0" layoutY="242.0" prefHeight="48.0" prefWidth="298.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="70.0" layoutY="17.0" text="LINES OF CODE" textFill="#9a9a9a">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_List_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="425.0" layoutY="296.0" prefHeight="285.0" prefWidth="298.0">
+               <children>
+                  <BarChart fx:id="bar_chart" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" layoutX="12.0" layoutY="28.0" prefHeight="230.0" prefWidth="274.0" title="PROJECTS" verticalGridLinesVisible="false">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </Pane>
+            <Pane layoutX="798.0" layoutY="296.0" prefHeight="285.0" prefWidth="298.0">
+               <children>
+                  <StackedAreaChart fx:id="area_chart" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="14.0" layoutY="28.0" prefHeight="241.0" prefWidth="274.0" title="CODE" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+                    <xAxis>
+                      <NumberAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </StackedAreaChart>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="-3.0" prefHeight="135.0" prefWidth="1152.0" style="-fx-background-color: #6B519E;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="36.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_Waxing_Crescent_64px_1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="128.0" layoutY="39.0" text="KeepToo" textFill="#fff7f7">
+               <font>
+                  <Font name="Josefin Sans Thin" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
