@@ -10,6 +10,6 @@ None for this project
 
 Screens
 
-![Example](https://github.com/k33ptoo/FX-Inspiration/sc.png)
+![Example](https://github.com/k33ptoo/FX-Inspiration/blob/master/sc.png)
 
 Cheers!!
